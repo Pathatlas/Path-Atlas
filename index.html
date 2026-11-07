@@ -408,7 +408,6 @@
       <input type="text" id="accessCodeInput" class="access-input" placeholder="例如：PA-XXXX-XXXX" autocomplete="off" spellcheck="false" />
       <p id="accessError" class="access-error hide">兑换码无效，请检查后重试。</p>
       <button id="accessSubmit" class="btn btn-primary access-submit">验证并开始 →</button>
-      <p class="access-modal-note">还没有兑换码？<br>关注获取方式</p>
     </div>
   </div>
 
@@ -627,14 +626,29 @@
     const LEGACY_STORAGE_KEY='path-atlas-v1.2-progress';
     const MIGRATION_SEEN_KEY='path-atlas-v1.2.1-migration-seen';
     // ===== 访问码配置 =====
-    // 在这里添加你的兑换码，格式：'PA-XXXX-XXXX'
+    // 在这里添加你的兑换码，格式：'XXXXXX'
     const VALID_CODES = new Set([
-      'PA-DEMO-0001',
-      'PA-DEMO-0002',
-      'PA-DEMO-0003',
-      'PA-DEMO-0004',
-      'PA-DEMO-0005',
-    ]);
+  '472918',
+  '836105',
+  '295734',
+  '618290',
+  '943672',
+  '158947',
+  '726381',
+  '381509',
+  '507264',
+  '864193',
+  '219576',
+  '673048',
+  '902851',
+  '457129',
+  '136487',
+  '782903',
+  '391645',
+  '528716',
+  '840329',
+  '265974',
+]);
     const ACCESS_STORAGE_KEY = 'path-atlas-access-granted';
 
     window.PathAtlasAccessProvider = {
